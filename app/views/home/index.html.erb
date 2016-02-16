@@ -1,0 +1,33 @@
+<div id="oauto">
+	<a href="https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=REDIRECT-URI&response_type=token">Click Here to Begin</a>
+</div>
+<div id="container">
+	<div id="green">
+		<h1>Shop-a-gram!</h1>
+		<h5>Search n' shop!</h5>
+	</div>
+	<div id="orange">
+		<p>Find real products and their real photos, posted and hashtagged by real sellers all over the world. Buy and sell opportunities abound!</p>
+	</div>
+</div>
+<div id="yellow">
+	<br>
+	<br>
+	<br>
+	<%= form_tag "/search", method: "get" do %>
+		<%= label_tag :query, "Search Instagram" %>
+		<%= text_field_tag :query %>
+		<%= submit_tag "Search" %>
+	<% end %> 
+
+	<% if @results %>
+		<% @results.each do |result| %>
+			<ul>
+				<li><div><% result.text %></div></li>
+			</ul>
+		<% end %>
+	<% end %>
+	<br>
+	<br>
+	<br>
+</div>

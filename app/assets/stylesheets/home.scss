@@ -1,0 +1,63 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+	background-color: #ccffb3;
+}
+
+#oauto {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-size: 175%;
+	font-family: garamond;
+	background-color: #ffff99;
+
+	a:visited {
+		margin: 8px;
+		color: #288000;
+	}
+}
+
+#container {
+	width: 100%;
+	height: 20%;
+	position: fixed;
+}
+
+#green {
+	background-color: #bfff00;
+	border: solid black 3px;
+	width: 27%;
+	position: relative;
+	float: left;
+
+	h1 {
+		margin-left: 8%;
+		font-family: futura; 
+	}
+
+	h5 {
+		margin-left: 8%;
+		font-family: futura; 
+	}
+}
+
+#orange {
+	background-color: #ffdd99;
+	width: 72%;
+	position: relative;
+	float: left;
+
+	p {
+		padding: 5%;
+		font-family: garamond;
+	}
+}
+
+#yellow {
+	background-color: #ffff99;
+	width: 100%;
+	height: auto;
+	margin-top: 15%;
+}
